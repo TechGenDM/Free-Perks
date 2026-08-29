@@ -12,7 +12,7 @@ export function ClientBrowseSection() {
   return (
     <div className="flex flex-col gap-8">
       {/* Search Bar & Filters Controls */}
-      <div className="p-4 sm:p-5 rounded-2xl glass-panel border border-white/[0.08] flex flex-col gap-4">
+      <div className="p-4 sm:p-5 rounded-2xl glass-panel border border-white/8 flex flex-col gap-4">
         {/* Search Input */}
         <div className="relative w-full">
           <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
@@ -24,7 +24,7 @@ export function ClientBrowseSection() {
             placeholder="Search by tool name, tag, or offer (e.g. Copilot, Cloud, Hosting)..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-12 pr-10 py-3 rounded-xl bg-white/[0.04] border border-white/10 text-white placeholder-slate-400 text-sm focus:outline-none focus:border-indigo-500/60 focus:ring-1 focus:ring-indigo-500/60 transition-colors"
+            className="w-full pl-12 pr-10 py-3 rounded-xl bg-white/4 border border-white/10 text-white placeholder-slate-400 text-sm focus:outline-none focus:border-indigo-500/60 focus:ring-1 focus:ring-indigo-500/60 transition-colors"
           />
           {searchQuery && (
             <button
@@ -57,7 +57,7 @@ export function ClientBrowseSection() {
               className={`flex h-10 w-10 items-center justify-center rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer ${
                 page === pagination.page
                   ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-600/40 border border-indigo-400/40'
-                  : 'bg-white/[0.04] border border-white/[0.08] text-slate-400 hover:border-white/20 hover:text-white'
+                  : 'bg-white/4 border border-white/8 text-slate-400 hover:border-white/20 hover:text-white'
               }`}
               onClick={() => useToolStore.getState().setPage(page)}
               aria-label={`Go to page ${page}`}

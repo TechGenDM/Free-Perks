@@ -23,7 +23,7 @@ export function FeaturedBundle({ tools }: FeaturedBundleProps) {
       className="py-6"
     >
       <div className="relative overflow-hidden rounded-3xl bg-zinc-900 border border-zinc-800 p-8 md:p-12 shadow-2xl">
-        {/* Subtle spotlight — single radial gradient, not a blob */}
+        {/* Subtle spotlight */}
         <div
           className="pointer-events-none absolute inset-0"
           style={{
@@ -71,11 +71,11 @@ export function FeaturedBundle({ tools }: FeaturedBundleProps) {
               <motion.div
                 key={tool._id}
                 variants={shouldReduce ? {} : cardVariants}
-                className="flex-shrink-0 snap-start"
+                className="shrink-0 snap-start"
               >
                 <Link
                   href={`/tools/${tool.slug}`}
-                  className="flex flex-col gap-4 p-5 rounded-2xl border border-zinc-700/50 bg-zinc-800/50 hover:bg-zinc-800 hover:border-zinc-600 transition-all duration-300 group w-[260px]"
+                  className="flex flex-col gap-4 p-5 rounded-2xl border border-zinc-700/50 bg-zinc-800/50 hover:bg-zinc-800 hover:border-zinc-600 transition-all duration-300 group w-65"
                 >
                   <div className="flex items-center gap-3">
                     <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-zinc-900 text-white font-bold border border-zinc-700 shadow-sm group-hover:border-zinc-600 transition-all duration-300">

@@ -56,9 +56,9 @@ export function SceneStack({ tools }: SceneStackProps) {
   );
 
   return (
-    <section className="relative py-28 md:py-36 px-4 md:px-6 bg-[#090d16] overflow-hidden border-t border-white/[0.04]">
+    <section className="relative py-28 md:py-36 px-4 md:px-6 bg-[#090d16] overflow-hidden border-t border-white/4">
       {/* Ambience */}
-      <div className="aurora-orb-violet bottom-[10%] right-[-100px]" />
+      <div className="aurora-orb-violet bottom-[10%] -right-25" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Header */}
@@ -74,7 +74,7 @@ export function SceneStack({ tools }: SceneStackProps) {
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-[-0.03em] text-white mb-4">
             Assemble your{' '}
-            <span className="bg-gradient-to-r from-purple-300 via-indigo-300 to-cyan-300 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-purple-300 via-indigo-300 to-cyan-300 bg-clip-text text-transparent">
               $0 dev stack.
             </span>
           </h2>
@@ -86,7 +86,7 @@ export function SceneStack({ tools }: SceneStackProps) {
         {/* Live Total Value Saved Banner */}
         <div className="mb-10 p-6 rounded-3xl glass-panel border border-indigo-500/30 shadow-[0_0_50px_-15px_rgba(99,102,241,0.25)] flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-4">
-            <div className="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-600 to-purple-600 flex items-center justify-center text-2xl shadow-lg shadow-indigo-500/30">
+            <div className="w-14 h-14 rounded-2xl bg-linear-to-tr from-indigo-600 to-purple-600 flex items-center justify-center text-2xl shadow-lg shadow-indigo-500/30">
               💎
             </div>
             <div>
@@ -130,7 +130,7 @@ export function SceneStack({ tools }: SceneStackProps) {
                 className={`group relative p-5 rounded-2xl cursor-pointer transition-all duration-200 border ${
                   isSelected
                     ? 'bg-indigo-950/40 border-indigo-500/60 shadow-lg shadow-indigo-950/50'
-                    : 'glass-card border-white/[0.06] opacity-60 hover:opacity-90'
+                    : 'glass-card border-white/6 opacity-60 hover:opacity-90'
                 }`}
               >
                 <div className="flex items-start justify-between gap-3 mb-3">

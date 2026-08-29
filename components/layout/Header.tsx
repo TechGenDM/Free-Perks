@@ -36,12 +36,12 @@ export function Header() {
         className={`pointer-events-auto flex items-center justify-between w-full max-w-6xl px-4 py-2.5 rounded-2xl transition-all duration-300 ${
           scrolled
             ? 'bg-[#0a0e1c]/80 backdrop-blur-2xl border border-white/10 shadow-[0_16px_40px_-10px_rgba(0,0,0,0.7)] shadow-indigo-500/5'
-            : 'bg-[#0c1222]/40 backdrop-blur-xl border border-white/[0.06] shadow-[0_8px_30px_rgb(0,0,0,0.3)]'
+            : 'bg-[#0c1222]/40 backdrop-blur-xl border border-white/6 shadow-[0_8px_30px_rgb(0,0,0,0.3)]'
         }`}
       >
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group focus:outline-none">
-          <div className="relative flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-purple-500 text-white shadow-lg shadow-indigo-500/25 transition-transform duration-300 group-hover:scale-105">
+          <div className="relative flex h-9 w-9 items-center justify-center rounded-xl bg-linear-to-tr from-indigo-600 via-indigo-500 to-purple-500 text-white shadow-lg shadow-indigo-500/25 transition-transform duration-300 group-hover:scale-105">
             <span className="font-mono text-xs font-black tracking-wider">FP</span>
             <div className="absolute inset-0 rounded-xl bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
@@ -70,14 +70,14 @@ export function Header() {
                 className={`relative px-3.5 py-1.5 text-xs sm:text-sm font-medium rounded-xl transition-all duration-200 focus:outline-none ${
                   isActive
                     ? 'text-white'
-                    : 'text-slate-400 hover:text-slate-200 hover:bg-white/[0.04]'
+                    : 'text-slate-400 hover:text-slate-200 hover:bg-white/4'
                 }`}
                 aria-current={isActive ? 'page' : undefined}
               >
                 {isActive && !shouldReduce && (
                   <motion.div
                     layoutId="header-active-pill"
-                    className="absolute inset-0 rounded-xl bg-white/[0.08] border border-white/10 shadow-inner"
+                    className="absolute inset-0 rounded-xl bg-white/8 border border-white/10 shadow-inner"
                     style={{ zIndex: -1 }}
                     transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                   />
@@ -92,7 +92,7 @@ export function Header() {
         <div className="flex items-center gap-2">
           <button
             onClick={handleSearchClick}
-            className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs font-medium text-slate-400 bg-white/[0.04] border border-white/10 hover:border-indigo-500/40 hover:text-white transition-all group cursor-pointer"
+            className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs font-medium text-slate-400 bg-white/4 border border-white/10 hover:border-indigo-500/40 hover:text-white transition-all group cursor-pointer"
             aria-label="Search tools"
           >
             <svg className="w-3.5 h-3.5 text-slate-400 group-hover:text-indigo-400 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">

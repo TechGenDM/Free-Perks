@@ -84,7 +84,7 @@ export function SceneUniverse({ categories }: SceneUniverseProps) {
     <section className="relative py-28 md:py-36 px-4 md:px-6 bg-[#07090e] overflow-hidden">
       {/* Background Ambience */}
       <div className="absolute inset-0 bg-mesh-grid opacity-20 pointer-events-none" />
-      <div className="aurora-orb-indigo top-[10%] right-[-150px]" />
+      <div className="aurora-orb-indigo top-[10%] -right-37.5" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Section Header */}
@@ -100,7 +100,7 @@ export function SceneUniverse({ categories }: SceneUniverseProps) {
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-[-0.03em] text-white mb-4">
             Every tool you need.{' '}
-            <span className="bg-gradient-to-r from-indigo-300 to-purple-300 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-indigo-300 to-purple-300 bg-clip-text text-transparent">
               None of the cost.
             </span>
           </h2>
@@ -134,21 +134,21 @@ export function SceneUniverse({ categories }: SceneUniverseProps) {
               >
                 <Link
                   href={`/category/${cat.slug}`}
-                  className={`group relative block h-full p-6 md:p-7 rounded-2xl glass-card border border-white/[0.08] ${style.border} transition-all duration-300 overflow-hidden`}
+                  className={`group relative block h-full p-6 md:p-7 rounded-2xl glass-card border border-white/8 ${style.border} transition-all duration-300 overflow-hidden`}
                 >
                   {/* Subtle Top-Right Ambient Glow */}
                   <div
-                    className={`absolute -top-16 -right-16 w-36 h-36 rounded-full bg-gradient-to-br ${style.gradient} blur-2xl opacity-40 group-hover:opacity-80 transition-opacity duration-500`}
+                    className={`absolute -top-16 -right-16 w-36 h-36 rounded-full bg-linear-to-br ${style.gradient} blur-2xl opacity-40 group-hover:opacity-80 transition-opacity duration-500`}
                   />
 
                   <div className="relative z-10 flex flex-col h-full justify-between">
                     <div>
                       {/* Icon + Count Header */}
                       <div className="flex items-center justify-between mb-5">
-                        <div className="w-12 h-12 rounded-xl bg-white/[0.05] border border-white/10 flex items-center justify-center shadow-inner group-hover:scale-105 transition-transform duration-300">
+                        <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shadow-inner group-hover:scale-105 transition-transform duration-300">
                           {style.iconPath}
                         </div>
-                        <span className="text-xs font-mono font-semibold px-2.5 py-1 rounded-lg bg-white/[0.05] border border-white/[0.08] text-slate-300">
+                        <span className="text-xs font-mono font-semibold px-2.5 py-1 rounded-lg bg-white/5 border border-white/8 text-slate-300">
                           {cat.tool_count} {cat.tool_count === 1 ? 'Perk' : 'Perks'}
                         </span>
                       </div>
@@ -163,7 +163,7 @@ export function SceneUniverse({ categories }: SceneUniverseProps) {
                     </div>
 
                     {/* Footer Explore Arrow */}
-                    <div className="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-xs font-semibold text-indigo-400 group-hover:text-indigo-300">
+                    <div className="mt-6 pt-4 border-t border-white/6 flex items-center justify-between text-xs font-semibold text-indigo-400 group-hover:text-indigo-300">
                       <span>Explore Category</span>
                       <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />

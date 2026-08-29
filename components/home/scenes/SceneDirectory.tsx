@@ -7,7 +7,7 @@ export function SceneDirectory() {
   const shouldReduce = useReducedMotion();
 
   return (
-    <section id="browse" className="relative py-28 md:py-36 px-4 md:px-6 bg-[#07090e] overflow-hidden border-t border-white/[0.04] scroll-mt-12">
+    <section id="browse" className="relative py-28 md:py-36 px-4 md:px-6 bg-[#07090e] overflow-hidden border-t border-white/4 scroll-mt-12">
       {/* Background Ambience */}
       <div className="absolute inset-0 bg-dot-grid opacity-20 pointer-events-none" />
       <div className="aurora-orb-indigo top-[10%] left-[50%] -translate-x-1/2" />

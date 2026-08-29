@@ -66,7 +66,7 @@ export function CuratedCollection({ title, description, tools, viewAllLink }: Cu
           className="flex overflow-x-auto pb-6 -mx-4 px-4 md:mx-0 md:px-0 md:grid md:grid-cols-2 lg:grid-cols-4 gap-5 snap-x hide-scrollbar scroll-fade-right md:scroll-fade-none"
         >
           {tools.map((tool) => (
-            <div key={tool._id} className="flex-shrink-0 w-[280px] md:w-auto snap-start h-full">
+            <div key={tool._id} className="shrink-0 w-70 md:w-auto snap-start h-full">
               <ToolCard tool={tool} />
             </div>
           ))}

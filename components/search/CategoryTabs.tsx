@@ -8,14 +8,14 @@ export function CategoryTabs() {
   const { categories, activeCategory, setActiveCategory, sortBy, setSortBy } = useToolStore();
 
   return (
-    <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pt-2 border-t border-white/[0.06]">
+    <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pt-2 border-t border-white/6">
       {/* Category Pills */}
       <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
         <button
           className={`relative rounded-xl px-3.5 py-1.5 text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer ${
             activeCategory === null
               ? 'text-white'
-              : 'text-slate-400 hover:text-slate-200 hover:bg-white/[0.04]'
+              : 'text-slate-400 hover:text-slate-200 hover:bg-white/4'
           }`}
           onClick={() => setActiveCategory(null)}
         >
@@ -35,7 +35,7 @@ export function CategoryTabs() {
             className={`relative rounded-xl px-3.5 py-1.5 text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer ${
               activeCategory === cat._id
                 ? 'text-white'
-                : 'text-slate-400 hover:text-slate-200 hover:bg-white/[0.04]'
+                : 'text-slate-400 hover:text-slate-200 hover:bg-white/4'
             }`}
             onClick={() => setActiveCategory(cat._id)}
           >
@@ -49,7 +49,7 @@ export function CategoryTabs() {
             <span className="relative z-10 flex items-center gap-1.5">
               <span>{cat.name}</span>
               <span className={`text-[10px] font-mono px-1.5 py-0.2 rounded-md ${
-                activeCategory === cat._id ? 'bg-white/20 text-white' : 'bg-white/[0.08] text-slate-400'
+                activeCategory === cat._id ? 'bg-white/20 text-white' : 'bg-white/8 text-slate-400'
               }`}>
                 {cat.tool_count}
               </span>
@@ -63,7 +63,7 @@ export function CategoryTabs() {
         <span className="text-slate-400 font-medium">Sort by:</span>
         <div className="relative">
           <select
-            className="appearance-none bg-white/[0.05] border border-white/10 text-white font-semibold rounded-xl pl-3 pr-8 py-1.5 text-xs focus:border-indigo-500/60 focus:outline-none cursor-pointer"
+            className="appearance-none bg-white/5 border border-white/10 text-white font-semibold rounded-xl pl-3 pr-8 py-1.5 text-xs focus:border-indigo-500/60 focus:outline-none cursor-pointer"
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value as SortOption)}
           >

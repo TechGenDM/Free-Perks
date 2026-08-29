@@ -85,7 +85,7 @@ export function ToolDetailClient({ tool }: { tool: Tool }) {
             </motion.p>
           </motion.div>
 
-          <hr className="border-white/[0.06]" />
+          <hr className="border-white/6" />
 
           {/* About section */}
           <motion.div variants={shouldReduce ? {} : fadeUp} className="flex flex-col gap-4">
@@ -105,7 +105,7 @@ export function ToolDetailClient({ tool }: { tool: Tool }) {
                 {tool.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="inline-flex items-center rounded-lg bg-white/[0.04] border border-white/[0.08] px-3 py-1 font-mono text-xs font-medium text-slate-300"
+                    className="inline-flex items-center rounded-lg bg-white/4 border border-white/8 px-3 py-1 font-mono text-xs font-medium text-slate-300"
                   >
                     #{tag}
                   </span>
@@ -159,7 +159,7 @@ export function ToolDetailClient({ tool }: { tool: Tool }) {
               </div>
             )}
 
-            <hr className="border-white/[0.06]" />
+            <hr className="border-white/6" />
 
             {/* CTA */}
             <div className="flex flex-col gap-3">

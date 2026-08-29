@@ -7,10 +7,10 @@ export function SceneCTA() {
   const shouldReduce = useReducedMotion();
 
   return (
-    <section className="relative py-32 md:py-44 px-4 md:px-6 bg-[#07090e] overflow-hidden border-t border-white/[0.04]">
+    <section className="relative py-32 md:py-44 px-4 md:px-6 bg-[#07090e] overflow-hidden border-t border-white/4">
       {/* Background Ambient Auroras */}
-      <div className="aurora-orb-indigo top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px]" />
-      <div className="aurora-orb-violet top-1/3 right-[10%] w-[500px] h-[500px]" />
+      <div className="aurora-orb-indigo top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-175 h-175" />
+      <div className="aurora-orb-violet top-1/3 right-[10%] w-125 h-125" />
 
       <div className="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
         {/* Top Tag */}
@@ -33,7 +33,7 @@ export function SceneCTA() {
           className="text-4xl sm:text-5xl md:text-7xl font-black tracking-[-0.04em] leading-[0.95] text-white mb-6"
         >
           Now go build{' '}
-          <span className="bg-gradient-to-r from-indigo-300 via-purple-300 to-cyan-300 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-indigo-300 via-purple-300 to-cyan-300 bg-clip-text text-transparent">
             something.
           </span>
         </motion.h2>

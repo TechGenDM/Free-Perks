@@ -33,13 +33,13 @@ export function SceneHook({ totalTools }: SceneHookProps) {
   return (
     <section className="relative min-h-[92vh] md:min-h-screen flex flex-col items-center justify-center pt-24 pb-16 px-4 md:px-6 overflow-hidden bg-[#07090e]">
       {/* Aurora Glow Effects */}
-      <div className="aurora-orb-indigo top-[-100px] left-[50%] -translate-x-1/2" />
-      <div className="aurora-orb-violet top-[20%] right-[-100px]" />
-      <div className="aurora-orb-cyan bottom-[10%] left-[-100px]" />
+      <div className="aurora-orb-indigo -top-25 left-[50%] -translate-x-1/2" />
+      <div className="aurora-orb-violet top-[20%] -right-25" />
+      <div className="aurora-orb-cyan bottom-[10%] -left-25" />
 
       {/* Tech Grid Pattern */}
       <div className="absolute inset-0 bg-dot-grid opacity-30 pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#07090e]/40 to-[#07090e] pointer-events-none" />
+      <div className="absolute inset-0 bg-linear-to-b from-transparent via-[#07090e]/40 to-[#07090e] pointer-events-none" />
 
       {/* Floating Perks Preview Badges (Desktop) */}
       {!shouldReduce && (
@@ -125,7 +125,7 @@ export function SceneHook({ totalTools }: SceneHookProps) {
           className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-[-0.04em] leading-[0.95] text-white mb-6"
         >
           Build without{' '}
-          <span className="bg-gradient-to-r from-indigo-300 via-indigo-400 to-purple-400 bg-clip-text text-transparent drop-shadow-[0_0_35px_rgba(99,102,241,0.35)]">
+          <span className="bg-linear-to-r from-indigo-300 via-indigo-400 to-purple-400 bg-clip-text text-transparent drop-shadow-[0_0_35px_rgba(99,102,241,0.35)]">
             paying.
           </span>
         </motion.h1>
@@ -163,7 +163,7 @@ export function SceneHook({ totalTools }: SceneHookProps) {
               </span>
             </div>
             <div className="flex items-center gap-2 shrink-0">
-              <kbd className="hidden sm:inline-flex items-center gap-1 font-mono text-xs bg-white/[0.07] border border-white/15 text-slate-300 px-2 py-1 rounded-lg">
+              <kbd className="hidden sm:inline-flex items-center gap-1 font-mono text-xs bg-white/7 border border-white/15 text-slate-300 px-2 py-1 rounded-lg">
                 ⌘K
               </kbd>
               <span className="btn-primary text-xs py-2 px-3.5 rounded-xl shadow-md">
@@ -184,7 +184,7 @@ export function SceneHook({ totalTools }: SceneHookProps) {
             <button
               key={cat.slug}
               onClick={handleSearchClick}
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-medium text-slate-300 bg-white/[0.04] border border-white/[0.08] hover:border-indigo-500/40 hover:bg-white/[0.08] hover:text-white transition-all duration-200 cursor-pointer"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-medium text-slate-300 bg-white/4 border border-white/8 hover:border-indigo-500/40 hover:bg-white/8 hover:text-white transition-all duration-200 cursor-pointer"
             >
               <span>{cat.icon}</span>
               <span>{cat.name}</span>
@@ -197,7 +197,7 @@ export function SceneHook({ totalTools }: SceneHookProps) {
           initial={shouldReduce ? {} : { opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="mt-16 pt-8 border-t border-white/[0.06] grid grid-cols-3 gap-6 sm:gap-12 text-center"
+          className="mt-16 pt-8 border-t border-white/6 grid grid-cols-3 gap-6 sm:gap-12 text-center"
         >
           <div>
             <div className="text-2xl sm:text-3xl font-black text-white">$15,000+</div>
@@ -215,7 +215,7 @@ export function SceneHook({ totalTools }: SceneHookProps) {
       </div>
 
       {/* Bottom Soft Fade */}
-      <div className="absolute bottom-0 inset-x-0 h-24 bg-gradient-to-t from-[#07090e] to-transparent pointer-events-none" />
+      <div className="absolute bottom-0 inset-x-0 h-24 bg-linear-to-t from-[#07090e] to-transparent pointer-events-none" />
     </section>
   );
 }

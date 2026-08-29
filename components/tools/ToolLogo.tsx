@@ -54,7 +54,7 @@ export function ToolLogo({ slug, title, size = 'md', className = '' }: ToolLogoP
 
     case 'azure-for-students':
       return (
-        <div className={`${sizeMap[size]} rounded-xl bg-gradient-to-br from-[#0089D6] to-[#0072C6] border border-white/10 flex items-center justify-center text-white shrink-0 shadow-md ${className}`}>
+        <div className={`${sizeMap[size]} rounded-xl bg-linear-to-br from-[#0089D6] to-[#0072C6] border border-white/10 flex items-center justify-center text-white shrink-0 shadow-md ${className}`}>
           <svg width={iconPx} height={iconPx} viewBox="0 0 24 24" fill="currentColor">
             <path d="M13.05 4.24l-4.5 7.79 6.75 6.75h5.45l-7.7-14.54zm-4.7 1.84L2 18.78h4.64l4.08-7.07-2.37-5.63z" />
           </svg>
@@ -110,7 +110,7 @@ export function ToolLogo({ slug, title, size = 'md', className = '' }: ToolLogoP
 
     case 'jetbrains-all-products-pack':
       return (
-        <div className={`${sizeMap[size]} rounded-xl bg-gradient-to-tr from-[#FF318C] via-[#9B00E8] to-[#000000] border border-white/10 flex items-center justify-center text-white font-mono font-black text-xs shrink-0 shadow-md ${className}`}>
+        <div className={`${sizeMap[size]} rounded-xl bg-linear-to-tr from-[#FF318C] via-[#9B00E8] to-[#000000] border border-white/10 flex items-center justify-center text-white font-mono font-black text-xs shrink-0 shadow-md ${className}`}>
           JB
         </div>
       );
@@ -151,7 +151,7 @@ export function ToolLogo({ slug, title, size = 'md', className = '' }: ToolLogoP
 
     default:
       return (
-        <div className={`${sizeMap[size]} rounded-xl bg-gradient-to-br from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-300 font-bold shrink-0 shadow-md ${className}`}>
+        <div className={`${sizeMap[size]} rounded-xl bg-linear-to-br from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-300 font-bold shrink-0 shadow-md ${className}`}>
           {title.charAt(0).toUpperCase()}
         </div>
       );

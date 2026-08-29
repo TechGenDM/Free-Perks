@@ -29,7 +29,7 @@ export function SaveButton({ toolId }: SaveButtonProps) {
       className={`flex h-8 w-8 items-center justify-center rounded-xl transition-all duration-200 cursor-pointer ${
         isSaved
           ? 'bg-indigo-600/30 text-indigo-300 border border-indigo-500/40 shadow-sm shadow-indigo-500/30'
-          : 'bg-white/[0.04] text-slate-400 border border-white/[0.08] hover:text-white hover:bg-white/[0.08] hover:border-white/20'
+          : 'bg-white/4 text-slate-400 border border-white/8 hover:text-white hover:bg-white/8 hover:border-white/20'
       }`}
       aria-label={isSaved ? 'Remove from saved' : 'Save tool'}
     >

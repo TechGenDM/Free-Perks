@@ -112,7 +112,7 @@ export default function SubmitPage() {
                   type="text"
                   id="title"
                   name="title"
-                  className="rounded-xl bg-white/[0.04] border border-white/10 px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:border-indigo-500 focus:outline-none"
+                  className="rounded-xl bg-white/4 border border-white/10 px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:border-indigo-500 focus:outline-none"
                   placeholder="e.g. GitHub Copilot"
                 />
               </div>
@@ -125,7 +125,7 @@ export default function SubmitPage() {
                   type="url"
                   id="url"
                   name="url"
-                  className="rounded-xl bg-white/[0.04] border border-white/10 px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:border-indigo-500 focus:outline-none"
+                  className="rounded-xl bg-white/4 border border-white/10 px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:border-indigo-500 focus:outline-none"
                   placeholder="https://github.com/..."
                 />
               </div>
@@ -140,12 +140,12 @@ export default function SubmitPage() {
                 id="description"
                 name="description"
                 rows={3}
-                className="rounded-xl bg-white/[0.04] border border-white/10 px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:border-indigo-500 focus:outline-none resize-none"
+                className="rounded-xl bg-white/4 border border-white/10 px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:border-indigo-500 focus:outline-none resize-none"
                 placeholder="What is this tool and why is it useful for students?"
               />
             </div>
 
-            <hr className="border-white/[0.06]" />
+            <hr className="border-white/6" />
 
             <div className="grid gap-5 md:grid-cols-2">
               <div className="flex flex-col gap-2">
@@ -173,7 +173,7 @@ export default function SubmitPage() {
                   type="text"
                   id="offerDescription"
                   name="offerDescription"
-                  className="rounded-xl bg-white/[0.04] border border-white/10 px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:border-indigo-500 focus:outline-none"
+                  className="rounded-xl bg-white/4 border border-white/10 px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:border-indigo-500 focus:outline-none"
                   placeholder="e.g. Free Individual plan while enrolled"
                 />
               </div>
@@ -187,7 +187,7 @@ export default function SubmitPage() {
                 type="email"
                 id="email"
                 name="email"
-                className="rounded-xl bg-white/[0.04] border border-white/10 px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:border-indigo-500 focus:outline-none"
+                className="rounded-xl bg-white/4 border border-white/10 px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:border-indigo-500 focus:outline-none"
                 placeholder="you@university.edu"
               />
             </div>

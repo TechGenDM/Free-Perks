@@ -12,7 +12,7 @@ interface SceneDiscoverProps {
 
 function FeaturedPerkCard({ tool }: { tool: Tool }) {
   return (
-    <div className="group relative h-full flex flex-col justify-between p-6 md:p-7 rounded-2xl glass-card border border-white/[0.08] hover:border-indigo-500/50 transition-all duration-300">
+    <div className="group relative h-full flex flex-col justify-between p-6 md:p-7 rounded-2xl glass-card border border-white/8 hover:border-indigo-500/50 transition-all duration-300">
       <div>
         {/* Header Row */}
         <div className="flex items-start justify-between gap-4 mb-4">
@@ -47,7 +47,7 @@ function FeaturedPerkCard({ tool }: { tool: Tool }) {
       </div>
 
       {/* Footer Info */}
-      <div className="pt-4 border-t border-white/[0.06] flex items-center justify-between">
+      <div className="pt-4 border-t border-white/6 flex items-center justify-between">
         <div className="flex items-center gap-1.5 text-xs text-emerald-400 font-medium">
           <span className="flex h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.8)]" />
           <span>Verified Student Perk</span>
@@ -69,7 +69,7 @@ function FeaturedPerkCard({ tool }: { tool: Tool }) {
 
 function CompactPerkCard({ tool }: { tool: Tool }) {
   return (
-    <div className="group relative p-4 rounded-xl glass-card border border-white/[0.08] hover:border-indigo-500/40 flex items-center justify-between gap-3 transition-all duration-200">
+    <div className="group relative p-4 rounded-xl glass-card border border-white/8 hover:border-indigo-500/40 flex items-center justify-between gap-3 transition-all duration-200">
       <div className="flex items-center gap-3 min-w-0">
         <ToolLogo slug={tool.slug} title={tool.title} size="md" />
         <div className="min-w-0">
@@ -99,9 +99,9 @@ export function SceneDiscover({ featuredTools }: SceneDiscoverProps) {
   const horizontalFeatured = featuredTools.slice(6, 8);
 
   return (
-    <section className="relative py-28 md:py-36 px-4 md:px-6 bg-[#07090e] overflow-hidden border-t border-white/[0.04]">
+    <section className="relative py-28 md:py-36 px-4 md:px-6 bg-[#07090e] overflow-hidden border-t border-white/4">
       {/* Ambience */}
-      <div className="aurora-orb-violet top-[20%] left-[-100px]" />
+      <div className="aurora-orb-violet top-[20%] -left-25" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Section Header */}
@@ -118,7 +118,7 @@ export function SceneDiscover({ featuredTools }: SceneDiscoverProps) {
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-[-0.03em] text-white">
               Handpicked for{' '}
-              <span className="bg-gradient-to-r from-indigo-300 via-purple-300 to-cyan-300 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-indigo-300 via-purple-300 to-cyan-300 bg-clip-text text-transparent">
                 builders.
               </span>
             </h2>
@@ -173,7 +173,7 @@ export function SceneDiscover({ featuredTools }: SceneDiscoverProps) {
               viewport={{ once: true, margin: '-40px' }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
             >
-              <div className="group p-5 md:p-6 rounded-2xl glass-card border border-white/[0.08] hover:border-indigo-500/40 flex flex-col md:flex-row md:items-center justify-between gap-4 transition-all duration-300">
+              <div className="group p-5 md:p-6 rounded-2xl glass-card border border-white/8 hover:border-indigo-500/40 flex flex-col md:flex-row md:items-center justify-between gap-4 transition-all duration-300">
                 <div className="flex items-center gap-4 min-w-0">
                   <ToolLogo slug={tool.slug} title={tool.title} size="lg" />
                   <div className="min-w-0">

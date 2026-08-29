@@ -57,7 +57,7 @@ export function CategoryTiles({ categories }: CategoryTilesProps) {
           <motion.div
             key={category._id}
             variants={shouldReduce ? {} : tileVariants}
-            className="flex-shrink-0 w-40 md:w-auto snap-start"
+            className="shrink-0 w-40 md:w-auto snap-start"
           >
             <Link
               href={`/category/${category.slug}`}

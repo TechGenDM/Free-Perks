@@ -19,7 +19,7 @@ export function ToolCard({ tool }: ToolCardProps) {
     <motion.div
       variants={cardVariants}
       layout="position"
-      className={`group relative flex flex-col justify-between overflow-hidden rounded-2xl glass-card border border-white/[0.08] hover:border-indigo-500/50 transition-all duration-300 ${
+      className={`group relative flex flex-col justify-between overflow-hidden rounded-2xl glass-card border border-white/8 hover:border-indigo-500/50 transition-all duration-300 ${
         isExpired ? 'opacity-50' : ''
       }`}
     >
@@ -86,7 +86,7 @@ export function ToolCard({ tool }: ToolCardProps) {
       </div>
 
       {/* Footer Row */}
-      <div className="flex items-center justify-between border-t border-white/[0.06] bg-black/20 px-5 py-3">
+      <div className="flex items-center justify-between border-t border-white/6 bg-black/20 px-5 py-3">
         <VerificationBadge
           status={tool.verificationStatus}
           verifiedAt={tool.verifiedAt}
